@@ -78,4 +78,7 @@
   .footer_content {
     flex-direction: column;
   }
+  .footer_content_map .map {
+    width: 350px;
+  }
 }

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
+import logo from "../../images/هوانا المعتمد-01.png";
 const NavBar = () => {
   const navRef = useRef();
 
@@ -11,7 +12,7 @@ const NavBar = () => {
   };
   return (
     <header>
-      <h2>Hawana</h2>
+      <img src={logo} alt="logo" width={120} />
       <nav ref={navRef}>
         <a href="/#">الرئيسية</a>
         <a href="/#">من نحن ؟</a>

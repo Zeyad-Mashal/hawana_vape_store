@@ -46,6 +46,9 @@
     -moz-column-width: 100%;
     column-width: 100%;
   }
+  .show_images_container h2 {
+    font-size: 40px;
+  }
 }
 /* model */
 .model {

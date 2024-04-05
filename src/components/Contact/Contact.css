@@ -1,0 +1,116 @@
+.contact {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+.contact_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact_container h2 {
+  color: #ba0000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contact_content {
+  background-color: #999;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 2rem;
+  height: 350px;
+}
+.contact_content div {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact_content input,
+.contact_content textarea {
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ba0000;
+  outline: none;
+  resize: none;
+}
+.contact_content textarea {
+  height: 120px;
+}
+
+.contact_content button {
+  padding: 10px 35px;
+  border: 1px solid #ba0000;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+.contact_content button:hover {
+  scale: 1.05;
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (max-width: 489px) {
+  .contact_content {
+    width: 400px;
+  }
+  .contact_content input,
+  .contact_content textarea {
+    width: 350px;
+  }
+}
+.contact_popup {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 0;
+  box-shadow: 4px 5px 5px #999;
+  position: fixed;
+  top: 30%;
+  width: 420px;
+  height: 230px;
+}
+.contact_popup h3 {
+  font-size: 30px;
+  color: #ba0000;
+  margin-bottom: 1rem;
+}
+.contact_popup h5 {
+  font-size: 25px;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.contact_popup .true_popup {
+  font-size: 35px;
+  color: green;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.contact_popup .close_popup {
+  position: absolute;
+  top: 10px;
+  right: -180px;
+  width: 100%;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+.contact_popup p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+}

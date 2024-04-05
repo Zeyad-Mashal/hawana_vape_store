@@ -1,0 +1,23 @@
+.banner1 {
+  background-color: #232323;
+  color: #fff;
+  width: 100%;
+}
+.banner1_container {
+  width: 100%;
+}
+.banner1_content {
+  position: relative;
+}
+.banner1_content h3 {
+  margin-top: 4rem;
+  font-size: 35px;
+  font-weight: bold;
+  color: #c90000;
+  margin-bottom: 1rem;
+}
+.banner1_content .image_banner {
+  z-index: 5;
+  width: 100%;
+  margin-bottom: 1rem;
+}

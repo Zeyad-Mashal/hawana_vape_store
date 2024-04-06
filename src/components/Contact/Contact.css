@@ -62,12 +62,12 @@
 }
 @media screen and (max-width: 489px) {
   .contact_content {
-    width: 400px;
+    width: 380px;
     height: 550px;
   }
   .contact_content input,
   .contact_content textarea {
-    width: 350px;
+    width: 340px;
   }
 }
 .contact_popup {

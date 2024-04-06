@@ -4,7 +4,7 @@
 .carousel img {
   height: 500px;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 .carousel .carousel-indicators {
   bottom: -10px;

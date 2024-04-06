@@ -1,7 +1,7 @@
 import React from "react";
 import "./InfoData.css";
 import info from "../../images/about.jpg";
-import InfoBanner from "../../images/banner1.jpeg";
+import InfoBanner from "../../images/banner3.jpeg";
 const InfoData = () => {
   return (
     <section className="info">

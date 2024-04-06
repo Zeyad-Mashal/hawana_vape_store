@@ -27,7 +27,6 @@
   width: 50%;
 }
 .info_content .info_content_data h2 {
-  font-weight: bold;
   margin-top: 1rem;
   font-family: "Air Strip Arabic", sans-serif;
 }
@@ -39,7 +38,7 @@
   padding: 10px;
 }
 .futuer_view {
-  background-image: url("../../images/banner1.jpeg");
+  background-image: url("../../images/banner2.jpeg");
   background-position: center;
   background-size: cover;
   padding: 1rem;
@@ -49,7 +48,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
 }
 .info_content_banner {
   width: 100%;

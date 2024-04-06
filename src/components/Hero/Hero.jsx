@@ -1,7 +1,8 @@
 import React from "react";
 import "./Hero.css";
-import hero from "../../images/banner1.jpeg";
-import hero2 from "../../images/2.jpg";
+import hero1 from "../../images/banner1.jpeg";
+import hero2 from "../../images/banner2.jpeg";
+import hero3 from "../../images/banner3.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -34,13 +35,13 @@ const Hero = () => {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src={hero} class="d-block w-100" alt="..." />
+          <img src={hero1} class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
           <img src={hero2} class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src={hero} class="d-block w-100" alt="..." />
+          <img src={hero3} class="d-block w-100" alt="..." />
         </div>
       </div>
       <button

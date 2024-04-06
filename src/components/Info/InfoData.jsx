@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfoData.css";
-import info from "../../images/about.jpg";
+import info from "../../images/how are we.jpeg";
+import info2 from "../../images/our company.jpeg";
 import InfoBanner from "../../images/banner3.jpeg";
 const InfoData = () => {
   return (
@@ -35,13 +36,13 @@ const InfoData = () => {
               </p>
             </div>
             <div className="info_image_holder">
-              <img src={info} alt="hawana info" />
+              <img src={info2} alt="hawana info" />
             </div>
           </div>
         </div>
         <div className="futuer_view mt-5">
           <div className="view_content">
-            <h2>الخطه المستقبليه ورؤيه الشركه</h2>
+            <h2>الخطة المستقبلة ورؤية الشركة</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               quaerat perspiciatis repudiandae reprehenderit rem voluptas ipsum

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Show.css";
-import img1 from "../../images/g1.jpg";
-import img2 from "../../images/g2.jpg";
-import img3 from "../../images/g3.avif";
-import img4 from "../../images/g4.jpeg";
-import img5 from "../../images/g5.jpg";
-import img6 from "../../images/g6.jpg";
+import img1 from "../../images/p1.jpeg";
+import img2 from "../../images/p2.jpeg";
+import img3 from "../../images/p3.jpeg";
+import img4 from "../../images/p4.jpeg";
+import img5 from "../../images/p5.jpeg";
+import img6 from "../../images/p6.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const Show = () => {

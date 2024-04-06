@@ -21,6 +21,7 @@
 }
 .info_content .info_image_holder img {
   width: 400px;
+  height: 400px;
   border-radius: 1rem;
 }
 .info_content .info_content_data {
@@ -38,7 +39,7 @@
   padding: 10px;
 }
 .futuer_view {
-  background-image: url("../../images/banner2.jpeg");
+  background-image: url("../../images/futuer.jpeg");
   background-position: center;
   background-size: cover;
   padding: 1rem;

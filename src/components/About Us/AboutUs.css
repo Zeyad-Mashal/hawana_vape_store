@@ -21,6 +21,7 @@
 }
 .about_content img {
   border-radius: 10px;
+  width: 450px;
   box-shadow: 4px 5px 5px #343433;
 }
 

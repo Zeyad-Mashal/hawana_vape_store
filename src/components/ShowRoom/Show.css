@@ -23,6 +23,10 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
+.gallary .pics img {
+  width: 100%;
+  height: 350px;
+}
 .gallary .pics:hover {
   filter: opacity(0.6);
 }

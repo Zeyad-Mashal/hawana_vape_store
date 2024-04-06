@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/air-strip-arabic");
 .info,
 .info_container {
   width: 100%;
@@ -7,6 +8,7 @@
 
   color: #fff;
   flex-direction: column;
+  font-family: "Air Strip Arabic", sans-serif;
 }
 .info_content {
   width: 100%;
@@ -27,9 +29,11 @@
 .info_content .info_content_data h2 {
   font-weight: bold;
   margin-top: 1rem;
+  font-family: "Air Strip Arabic", sans-serif;
 }
 .info_content .info_content_data p {
   font-size: 25px;
+  font-family: "Air Strip Arabic", sans-serif;
 }
 .info_wrapper {
   padding: 10px;

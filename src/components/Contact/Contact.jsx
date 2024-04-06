@@ -14,7 +14,7 @@ const Contact = () => {
       .classList.replace("d-block", "d-none");
   };
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact_container">
         <div className="contact_content">
           <h2>تواصل معنا</h2>

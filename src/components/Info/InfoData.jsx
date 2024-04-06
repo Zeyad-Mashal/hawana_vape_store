@@ -5,7 +5,7 @@ import info2 from "../../images/our company.jpeg";
 import InfoBanner from "../../images/banner3.jpeg";
 const InfoData = () => {
   return (
-    <section className="info">
+    <section className="info" id="info">
       <div className="info_container">
         <div className="info_wrapper">
           <div className="info_content">

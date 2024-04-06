@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 481px) {
   .carousel img {
-    height: 240px;
+    height: 220px;
   }
   .carousel .carousel-control-prev,
   .carousel .carousel-control-next {

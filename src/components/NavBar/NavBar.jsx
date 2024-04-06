@@ -15,9 +15,10 @@ const NavBar = () => {
       <img src={logo} alt="logo" width={120} />
       <nav ref={navRef}>
         <a href="/#">الرئيسية</a>
-        <a href="/#">من نحن ؟</a>
-        <a href="/#">المعرض</a>
-        <a href="/#">اتصل بنا</a>
+        <a href="/#about">من نحن ؟</a>
+        <a href="/#info">معلومات الشركة</a>
+        <a href="/#gallary">المعرض</a>
+        <a href="/#contact">اتصل بنا</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FontAwesomeIcon icon={faXmark} />
         </button>

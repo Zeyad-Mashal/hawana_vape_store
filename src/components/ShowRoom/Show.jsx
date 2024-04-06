@@ -42,7 +42,7 @@ const Show = () => {
     setModel(true);
   };
   return (
-    <section className="show_images">
+    <section className="show_images" id="gallary">
       <div className="show_images_container">
         <h2>معرض منتجاتنا</h2>
         <div

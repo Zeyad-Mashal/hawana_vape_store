@@ -49,6 +49,9 @@
   .show_images_container h2 {
     font-size: 35px;
   }
+  .gallary .pics img {
+    height: auto;
+  }
 }
 /* model */
 .model {

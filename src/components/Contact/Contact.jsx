@@ -22,7 +22,10 @@ const Contact = () => {
             <input type="text" placeholder="الاسم" />
             <input type="number" placeholder="رقم الهاتف" />
           </div>
-          <textarea placeholder="اكتب رسالتك او استفسر عن عروضنا" />
+          <div>
+            <input type="email" placeholder="الايميل" />
+            <textarea placeholder="اكتب رسالتك او استفسر عن عروضنا" />
+          </div>
           <button onClick={openContact}>ارسل</button>
         </div>
         <div className="contact_popup d-none">

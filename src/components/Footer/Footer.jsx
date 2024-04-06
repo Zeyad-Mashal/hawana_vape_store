@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          كل الحقوق محفوظة لدي هوانا فيب ستور | 2024 &copy;
+          كل الحقوق محفوظة لدي هوانا فيب | 2024 &copy;
         </div>
       </div>
     </footer>

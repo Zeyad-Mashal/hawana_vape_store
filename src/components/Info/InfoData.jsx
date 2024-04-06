@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfoData.css";
 import info from "../../images/about.jpg";
+import InfoBanner from "../../images/banner1.jpeg";
 const InfoData = () => {
   return (
     <section className="info">
@@ -20,7 +21,10 @@ const InfoData = () => {
             </div>
           </div>
         </div>
-        <div className="info_wrapper mt-5">
+        <div className="info_content_banner">
+          <img src={InfoBanner} alt="info banner" />
+        </div>
+        <div className="info_wrapper">
           <div className="info_content">
             <div className="info_content_data">
               <h2>متى بدات والى ماذا وصلت الان الشركه ؟</h2>

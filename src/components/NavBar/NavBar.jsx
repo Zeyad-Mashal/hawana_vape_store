@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
-import logo from "../../images/هوانا المعتمد-01.png";
+import logo from "../../images/logo.png";
 const NavBar = () => {
   const navRef = useRef();
 

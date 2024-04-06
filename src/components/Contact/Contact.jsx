@@ -16,8 +16,8 @@ const Contact = () => {
   return (
     <section className="contact">
       <div className="contact_container">
-        <h2>تواصل معنا</h2>
         <div className="contact_content">
+          <h2>تواصل معنا</h2>
           <div>
             <input type="text" placeholder="الاسم" />
             <input type="number" placeholder="رقم الهاتف" />

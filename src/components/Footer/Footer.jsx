@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer_container">
-        <h2>HAWANA Vape Store</h2>
+        <h2>HAWANA Vape</h2>
         <div className="social">
           <FontAwesomeIcon icon={faSnapchat} />
           <FontAwesomeIcon icon={faFacebookF} />

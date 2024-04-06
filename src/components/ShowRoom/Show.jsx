@@ -45,7 +45,6 @@ const Show = () => {
     <section className="show_images">
       <div className="show_images_container">
         <h2>معرض منتجاتنا</h2>
-        <h4>هوانا معني الفيب</h4>
         <div
           className={model ? " model open" : "model"}
           onClick={() => setModel(false)}

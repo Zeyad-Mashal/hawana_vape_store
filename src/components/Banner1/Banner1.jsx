@@ -9,7 +9,6 @@ const Banner1 = () => {
         <div className="banner1_content">
           <h3>HAWANA</h3>
           <img src={banner1} alt="" className="image_banner" />
-          <img src={banner1} alt="" className="image_banner" />
         </div>
       </div>
     </section>

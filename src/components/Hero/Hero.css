@@ -16,7 +16,7 @@
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
   background: #eee;
-  opacity: 0.3;
+  opacity: 0.2;
   width: 60px;
   transition: 0.3s ease;
 }
@@ -36,7 +36,7 @@
 }
 .carousel .carousel-control-prev:hover,
 .carousel .carousel-control-next:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 @media screen and (max-width: 789px) {
   .carousel img {
@@ -45,15 +45,19 @@
 }
 @media screen and (max-width: 481px) {
   .carousel img {
-    height: 260px;
+    height: 240px;
   }
   .carousel .carousel-control-prev,
   .carousel .carousel-control-next {
-    width: 40px;
+    width: 35px;
+  }
+  .carousel .carousel-control-prev .carousel-control-prev-icon,
+  .carousel .carousel-control-next .carousel-control-next-icon {
+    padding: 0;
   }
   .carousel .carousel-control-prev .carousel-control-prev-icon svg,
   .carousel .carousel-control-next .carousel-control-next-icon svg {
-    font-size: 17px;
+    font-size: 15px;
   }
   .carousel .carousel-indicators {
     width: 100px;

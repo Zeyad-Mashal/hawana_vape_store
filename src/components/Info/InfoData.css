@@ -1,0 +1,68 @@
+.info,
+.info_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  flex-direction: column;
+}
+.info_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_content .info_image_holder {
+  width: 50%;
+}
+.info_content .info_image_holder img {
+  width: 400px;
+  border-radius: 1rem;
+}
+.info_content .info_content_data {
+  width: 50%;
+}
+.info_content .info_content_data h2 {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.info_content .info_content_data p {
+  font-size: 25px;
+}
+.futuer_view {
+  background-image: url("../../images/banner1.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 789px) {
+  .info_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info_content .info_content_data,
+  .info_content .info_image_holder {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 489px) {
+  .info_content .info_image_holder img {
+    width: 350px;
+  }
+}

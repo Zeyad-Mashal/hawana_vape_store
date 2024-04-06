@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import hero from "../../images/1.jpg";
+import hero from "../../images/banner1.jpeg";
 import hero2 from "../../images/2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -8,9 +8,10 @@ const AboutUs = () => {
         <div className="about_info">
           <h2>من نحن ؟</h2>
           <h4>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-            labore necessitatibus praesentium cupiditate accusamus itaque
-            expedita nemo vero nostrum at!
+            اصل اسم هوانا من كلمة هواء و الذي نعني به ما نستنشقه من غازات سواء
+            أوكسجين او أي شيء يٌوستنشق بدافع الحياة و السعادة فهذا دلالة أيضا
+            على المنتجات التي نقدمها ولها علاقة بالهواء هواء في المعجم فاعل من
+            هوى أي ما تهواه انفسهم و تميل إليه .
           </h4>
         </div>
         <img src={image} alt="" />

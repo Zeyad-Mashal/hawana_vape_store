@@ -14,11 +14,11 @@ const NavBar = () => {
     <header>
       <img src={logo} alt="logo" width={120} />
       <nav ref={navRef}>
-        <a href="/#">الرئيسية</a>
-        <a href="/#about">من نحن ؟</a>
-        <a href="/#info">معلومات الشركة</a>
-        <a href="/#gallary">المعرض</a>
-        <a href="/#contact">اتصل بنا</a>
+        <a href="/hawana_vape_store/#">الرئيسية</a>
+        <a href="/hawana_vape_store/#about">من نحن ؟</a>
+        <a href="/hawana_vape_store/#info">معلومات الشركة</a>
+        <a href="/hawana_vape_store/#gallary">المعرض</a>
+        <a href="/hawana_vape_store/#contact">اتصل بنا</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FontAwesomeIcon icon={faXmark} />
         </button>

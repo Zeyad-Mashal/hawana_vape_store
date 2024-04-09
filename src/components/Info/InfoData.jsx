@@ -15,9 +15,10 @@ const InfoData = () => {
             <div className="info_content_data">
               <h2>كيف بدأت الفكره ؟</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi, dolorem esse quaerat temporibus dolorum repellat
-                aliquid dignissimos earum voluptate unde?
+                بدأت مسيرتنا من صحراء الشرق الأوسط، في يوما ما في العام 2020 قرر
+                المالك بناء علامة تجارية تنافس الماركات العالمية في مجالات عدة
+                أبرزها مجال الفيب (بدائل الدخان)، اكسسوارات ولوازم التدخين،
+                الفحم وغيرها.
               </p>
             </div>
           </div>
@@ -30,9 +31,10 @@ const InfoData = () => {
             <div className="info_content_data">
               <h2>متى بدات والى ماذا وصلت الان الشركه ؟</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi, dolorem esse quaerat temporibus dolorum repellat
-                aliquid dignissimos earum voluptate unde?
+                بدأت مسيرتنا من صحراء الشرق الأوسط، في يوما ما في العام 2020
+                كانت رؤيتنا هي صنع منتجات بروح وطابع يحاكي الذوق العربي، راعينا
+                في التصميم الاصالة والعراقة العربية مدموجة بلمسة من التقدم
+                الفكري والفخامة.
               </p>
             </div>
             <div className="info_image_holder">
@@ -44,9 +46,10 @@ const InfoData = () => {
           <div className="view_content">
             <h2>الخطة المستقبلة ورؤية الشركة</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              quaerat perspiciatis repudiandae reprehenderit rem voluptas ipsum
-              beatae consequatur sunt fugiat.
+              لدينا طاقم شغوف لديه خبرات واسعة من سنوات عدة يعملون ليل نهار لخلق
+              منتجات تقترب للكمال تليق بك عزيزي المستخدم. <br />
+              شعارتنا : #هوانا_يكمل_جوك_معانا , #هوانا_غير , #هوانا_عربي ,
+              #هو_اختيارنا
             </p>
           </div>
         </div>

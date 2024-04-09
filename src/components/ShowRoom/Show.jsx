@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Show.css";
 import img1 from "../../images/p1.jpeg";
 import img2 from "../../images/p2.jpeg";
@@ -8,38 +8,46 @@ import img5 from "../../images/p5.jpeg";
 import img6 from "../../images/p6.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import getImages from "../../Api/getImages.api";
 const Show = () => {
-  let data = [
-    {
-      id: 1,
-      imgSrc: img1,
-    },
-    {
-      id: 2,
-      imgSrc: img2,
-    },
-    {
-      id: 3,
-      imgSrc: img3,
-    },
-    {
-      id: 4,
-      imgSrc: img4,
-    },
-    {
-      id: 5,
-      imgSrc: img5,
-    },
-    {
-      id: 6,
-      imgSrc: img6,
-    },
-  ];
+  useEffect(() => {
+    getAllImagesApi();
+  });
+  const [allImages, setAllImages] = useState([]);
+  // let data = [
+  //   {
+  //     id: 1,
+  //     imgSrc: img1,
+  //   },
+  //   {
+  //     id: 2,
+  //     imgSrc: img2,
+  //   },
+  //   {
+  //     id: 3,
+  //     imgSrc: img3,
+  //   },
+  //   {
+  //     id: 4,
+  //     imgSrc: img4,
+  //   },
+  //   {
+  //     id: 5,
+  //     imgSrc: img5,
+  //   },
+  //   {
+  //     id: 6,
+  //     imgSrc: img6,
+  //   },
+  // ];
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
     setModel(true);
+  };
+  const getAllImagesApi = () => {
+    getImages(setAllImages);
   };
   return (
     <section className="show_images" id="gallary">
@@ -53,14 +61,14 @@ const Show = () => {
           <FontAwesomeIcon icon={faXmark} onClick={(e) => setModel(false)} />
         </div>
         <div className="gallary">
-          {data.map((item, index) => {
+          {allImages.map((item) => {
             return (
               <div
                 className="pics"
-                key={index}
-                onClick={() => getImg(item.imgSrc)}
+                key={item._id}
+                onClick={() => getImg(item.picURL)}
               >
-                <img src={item.imgSrc} alt="hawana_gallary" className="w-100" />
+                <img src={item.picURL} alt="hawana_gallary" className="w-100" />
               </div>
             );
           })}

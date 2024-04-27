@@ -100,3 +100,16 @@ nav {
     margin: 0;
   }
 }
+.dropdown .btn {
+  width: 140px;
+}
+.dropdown .btn.show {
+  border: none;
+}
+.dropdown svg {
+  color: #fff;
+  font-size: 20px;
+}
+.dropdown .dropdown-toggle::after {
+  display: none;
+}

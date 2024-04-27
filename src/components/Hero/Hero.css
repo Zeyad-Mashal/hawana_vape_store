@@ -2,7 +2,7 @@
   margin-top: 3rem;
 }
 .carousel img {
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
 }
@@ -15,8 +15,6 @@
 }
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
-  background: #eee;
-  opacity: 0.2;
   width: 60px;
   transition: 0.3s ease;
 }
@@ -25,14 +23,14 @@
   background-image: none;
   background-color: #222;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .carousel .carousel-control-prev .carousel-control-prev-icon svg,
 .carousel .carousel-control-next .carousel-control-next-icon svg {
-  font-size: 20px;
+  font-size: 25px;
 }
 .carousel .carousel-control-prev:hover,
 .carousel .carousel-control-next:hover {
@@ -40,16 +38,18 @@
 }
 @media screen and (max-width: 789px) {
   .carousel img {
-    height: 380px;
+    height: auto;
   }
 }
 @media screen and (max-width: 481px) {
   .carousel img {
-    height: 220px;
+    height: auto;
+    margin-top: 0.8rem;
   }
   .carousel .carousel-control-prev,
   .carousel .carousel-control-next {
-    width: 35px;
+    /* width: 35px; */
+    display: none;
   }
   .carousel .carousel-control-prev .carousel-control-prev-icon,
   .carousel .carousel-control-next .carousel-control-next-icon {

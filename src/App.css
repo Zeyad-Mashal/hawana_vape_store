@@ -1,3 +1,6 @@
+body {
+  background-color: #232323 !important;
+}
 .App {
   text-align: center;
   background-color: #232323;
@@ -16,6 +19,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 999999;
 }
 .fixed_contact svg {
   font-size: 33px;

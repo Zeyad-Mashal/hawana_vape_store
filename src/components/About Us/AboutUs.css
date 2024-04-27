@@ -11,36 +11,48 @@
   align-items: center;
   gap: 1rem;
 }
-.about_info h2 {
-  color: #ddd;
-  font-size: 45px;
+.about_info {
+  width: 50%;
 }
 .about_info h4 {
+  font-size: 25px;
   margin-top: 1rem;
   line-height: 1.5;
 }
 .about_content img {
   border-radius: 10px;
-  width: 450px;
+  width: 350px;
+  height: 350px;
   box-shadow: 4px 5px 5px #343433;
 }
 
 @media screen and (max-width: 789px) {
   .about_content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .about_info {
     margin-bottom: 1rem;
   }
   .about_content img {
     width: 450px;
+    height: 430px;
+  }
+  .about_info {
+    width: 100%;
+  }
+  .about_info h4 {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 489px) {
   .about_content img {
-    width: 350px;
+    width: 300px;
+    height: 300px;
   }
   .about_info h2 {
     font-size: 40px;
+  }
+  .about_info h4 {
+    font-size: 18px;
   }
 }

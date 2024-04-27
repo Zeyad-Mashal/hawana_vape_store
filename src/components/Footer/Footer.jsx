@@ -7,7 +7,11 @@ import {
   faXTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const [t] = useTranslation("globel");
+
   return (
     <footer className="footer">
       <div className="footer_container">
@@ -20,9 +24,9 @@ const Footer = () => {
         </div>
         <div className="footer_content">
           <div className="footer_content_info">
-            <h3>مواعيد العمل</h3>
-            <p>من السبت الي الخميس</p>
-            <p>من الساعة 12 صباحا الي 12 مساء</p>
+            <h3>{t("footerTime")}</h3>
+            <p>{t("days")}</p>
+            <p>{t("hours")}</p>
           </div>
           <div className="footer_content_map">
             <iframe
@@ -37,9 +41,7 @@ const Footer = () => {
             ></iframe>
           </div>
         </div>
-        <div className="copyright">
-          كل الحقوق محفوظة لدي هوانا فيب | 2024 &copy;
-        </div>
+        <div className="copyright">{t("copyright")}&copy;</div>
       </div>
     </footer>
   );

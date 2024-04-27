@@ -3,7 +3,10 @@ import "./InfoData.css";
 import info from "../../images/how are we.jpeg";
 import info2 from "../../images/our company.jpeg";
 import InfoBanner from "../../images/banner3.jpeg";
+import { useTranslation } from "react-i18next";
+
 const InfoData = () => {
+  const [t, i18n] = useTranslation("globel");
   return (
     <section className="info" id="info">
       <div className="info_container">
@@ -13,13 +16,7 @@ const InfoData = () => {
               <img src={info} alt="hawana info" />
             </div>
             <div className="info_content_data">
-              <h2>كيف بدأت الفكره ؟</h2>
-              <p>
-                بدأت مسيرتنا من صحراء الشرق الأوسط، في يوما ما في العام 2020 قرر
-                المالك بناء علامة تجارية تنافس الماركات العالمية في مجالات عدة
-                أبرزها مجال الفيب (بدائل الدخان)، اكسسوارات ولوازم التدخين،
-                الفحم وغيرها.
-              </p>
+              <p>{t("infoTop")}</p>
             </div>
           </div>
         </div>
@@ -27,15 +24,9 @@ const InfoData = () => {
           <img src={InfoBanner} alt="info banner" />
         </div>
         <div className="info_wrapper">
-          <div className="info_content">
+          <div className="info_content info_reverse">
             <div className="info_content_data">
-              <h2>متى بدات والى ماذا وصلت الان الشركه ؟</h2>
-              <p>
-                بدأت مسيرتنا من صحراء الشرق الأوسط، في يوما ما في العام 2020
-                كانت رؤيتنا هي صنع منتجات بروح وطابع يحاكي الذوق العربي، راعينا
-                في التصميم الاصالة والعراقة العربية مدموجة بلمسة من التقدم
-                الفكري والفخامة.
-              </p>
+              <p>{t("infoBottom")}</p>
             </div>
             <div className="info_image_holder">
               <img src={info2} alt="hawana info" />
@@ -44,12 +35,10 @@ const InfoData = () => {
         </div>
         <div className="futuer_view mt-5">
           <div className="view_content">
-            <h2>الخطة المستقبلة ورؤية الشركة</h2>
+            <h2>{t("ourVision")}</h2>
             <p>
-              لدينا طاقم شغوف لديه خبرات واسعة من سنوات عدة يعملون ليل نهار لخلق
-              منتجات تقترب للكمال تليق بك عزيزي المستخدم. <br />
-              شعارتنا : #هوانا_يكمل_جوك_معانا , #هوانا_غير , #هوانا_عربي ,
-              #هو_اختيارنا
+              {t("ourVisionDesc")} <br />
+              {t("slogan")}
             </p>
           </div>
         </div>

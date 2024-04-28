@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/hawana_vape_store/static/css/main.08b6b0c3.css",
-    "main.js": "/hawana_vape_store/static/js/main.c780b8ec.js",
+    "main.css": "/hawana_vape_store/static/css/main.d88162c3.css",
+    "main.js": "/hawana_vape_store/static/js/main.04f2d5e6.js",
+    "static/media/6.jpg": "/hawana_vape_store/static/media/6.ae3e41313d3d4436e907.jpg",
+    "static/media/5.jpg": "/hawana_vape_store/static/media/5.cc643bb08ec49818bade.jpg",
+    "static/media/4.jpg": "/hawana_vape_store/static/media/4.259ef8e04e3de599adea.jpg",
     "static/media/logo.png": "/hawana_vape_store/static/media/logo.8c1b780e76820d96cfd6.png",
+    "static/media/7.jpg": "/hawana_vape_store/static/media/7.28318b239048abc8de12.jpg",
     "static/media/how are we.jpeg": "/hawana_vape_store/static/media/how are we.f48b1a07f22bc61fb4cc.jpeg",
-    "static/media/banner1.jpg": "/hawana_vape_store/static/media/banner1.5e9944af4beed0224680.jpg",
     "static/media/our company.jpeg": "/hawana_vape_store/static/media/our company.198a56eb69520012226f.jpeg",
-    "static/media/banner2.jpg": "/hawana_vape_store/static/media/banner2.0dff85237f37afb83e40.jpg",
+    "static/media/3.jpg": "/hawana_vape_store/static/media/3.6778101c6e8cfb0c90a4.jpg",
     "static/media/about.jpeg": "/hawana_vape_store/static/media/about.6600be9808d84d7752f9.jpeg",
-    "static/media/banner3.jpeg": "/hawana_vape_store/static/media/banner3.892892a99372ec02c26e.jpeg",
     "static/media/futuer.jpeg": "/hawana_vape_store/static/media/futuer.571bc1ffc5f5bde1bc96.jpeg",
-    "static/media/banner3.jpg": "/hawana_vape_store/static/media/banner3.d2599465d374872a8b5c.jpg",
-    "static/media/banner1.jpeg": "/hawana_vape_store/static/media/banner1.2fd806f46f1c3cf706b2.jpeg",
     "static/media/p6.jpeg": "/hawana_vape_store/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
     "index.html": "/hawana_vape_store/index.html",
-    "main.08b6b0c3.css.map": "/hawana_vape_store/static/css/main.08b6b0c3.css.map",
-    "main.c780b8ec.js.map": "/hawana_vape_store/static/js/main.c780b8ec.js.map"
+    "main.d88162c3.css.map": "/hawana_vape_store/static/css/main.d88162c3.css.map",
+    "main.04f2d5e6.js.map": "/hawana_vape_store/static/js/main.04f2d5e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.08b6b0c3.css",
-    "static/js/main.c780b8ec.js"
+    "static/css/main.d88162c3.css",
+    "static/js/main.04f2d5e6.js"
   ]
 }

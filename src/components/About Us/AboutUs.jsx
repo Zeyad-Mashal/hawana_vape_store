@@ -4,7 +4,7 @@ import "./AboutUs.css";
 import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
-  const [t, i18n] = useTranslation("globel");
+  const [t] = useTranslation("globel");
   return (
     <section className="about" id="about">
       <div className="about_content">

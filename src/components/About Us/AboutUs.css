@@ -23,7 +23,6 @@
   border-radius: 10px;
   width: 350px;
   height: 350px;
-  box-shadow: 4px 5px 5px #343433;
 }
 
 @media screen and (max-width: 789px) {

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.css";
-import hero1 from "../../images/banner2.jpg";
-import hero2 from "../../images/banner1.jpg";
-import hero3 from "../../images/banner3.jpg";
+import hero1 from "../../images/5.jpg";
+import hero2 from "../../images/4.jpg";
+import hero3 from "../../images/7.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,

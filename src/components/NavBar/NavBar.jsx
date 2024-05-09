@@ -32,7 +32,9 @@ const NavBar = () => {
   handleWebsiteLang();
   return (
     <header>
-      <img src={logo} alt="logo" width={120} />
+      <a href="/hawana_vape_store">
+        <img src={logo} alt="logo" width={120} />
+      </a>
       <nav ref={navRef}>
         <a href="/hawana_vape_store/#">{t("header.home")}</a>
         <a href="/hawana_vape_store/#gallary">{t("header.ourproducts")}</a>

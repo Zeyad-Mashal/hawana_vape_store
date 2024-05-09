@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Vape.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faHorseHead } from "@fortawesome/free-solid-svg-icons";
 import image from "../../images/p6.jpeg";
 import { useTranslation } from "react-i18next";
 import getProductByCategory from "../../Api/getProductByCategory.api";

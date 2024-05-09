@@ -6,13 +6,10 @@
 .banner1_container {
   width: 100%;
 }
-.banner1_content {
-  position: relative;
-}
 .banner1_content .image_banner {
   z-index: 5;
   width: 100%;
-  height: 480px;
+  height: auto;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: 489px) {

@@ -20,13 +20,6 @@
   background-color: #999;
   border-radius: 16px;
 }
-.section_title_loading {
-  background-color: #999;
-  width: 300px;
-  height: 50px;
-  margin: auto;
-  border-radius: 16px;
-}
 .vape_list {
   margin-top: 2rem;
   width: 100%;
@@ -34,6 +27,32 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   grid-gap: 10px;
+}
+
+.vape_list .vape_icon {
+  color: #eee;
+  font-size: 55px;
+  width: 65px;
+  height: 65px;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  background-image: linear-gradient(60deg, #777, #000);
+  border-radius: 50%;
+  animation: animationIcon 5s infinite linear;
+  background-size: 500% 500%;
+}
+@keyframes animationIcon {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0 85%;
+  }
 }
 .vape_item {
   width: 250px;
@@ -68,6 +87,39 @@
   padding: 5px;
   color: #898989;
 }
+.vape_list .loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(0deg, rgba(115, 115, 115, 0.2) 33%, #fff 100%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  top: 100%;
+  right: 250%;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #263238;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .vape_list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -77,6 +129,10 @@
   .vape_list {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .vape_list .loader {
+    top: 100%;
+    right: 150%;
+  }
 }
 @media screen and (max-width: 789px) {
   .vape_list {
@@ -84,6 +140,10 @@
   }
   .vape_item {
     width: 300px;
+  }
+  .vape_list .loader {
+    top: 100%;
+    right: 100%;
   }
 }
 @media screen and (max-width: 589px) {
@@ -93,6 +153,10 @@
   .vape_item {
     width: 250px;
   }
+  .vape_list .loader {
+    top: 100%;
+    right: 90%;
+  }
 }
 @media screen and (max-width: 489px) {
   .vape_list {
@@ -101,26 +165,12 @@
   .vape_item {
     width: 320px;
   }
-}
-.vape_list .loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #fff;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
+  .vape_list .vape_icon {
+    top: 20%;
+    left: 40%;
   }
-  100% {
-    transform: rotate(360deg);
+  .vape_list .loader {
+    top: 100%;
+    right: 45%;
   }
 }

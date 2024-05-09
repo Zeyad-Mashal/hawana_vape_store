@@ -20,8 +20,8 @@
   line-height: 1.5;
 }
 .about_content img {
-  border-radius: 10px;
-  width: 350px;
+  /* border-radius: 10px; */
+  width: 450px;
   height: 350px;
 }
 

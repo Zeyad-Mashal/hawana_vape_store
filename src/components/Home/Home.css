@@ -44,9 +44,9 @@ body {
   outline: none;
   border: none;
   text-decoration: none;
+  background-color: #fff;
 }
 .popup_content button:hover {
-  background-color: #fff;
   color: #000;
   scale: 1.05;
 }

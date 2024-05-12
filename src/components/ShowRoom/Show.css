@@ -7,7 +7,7 @@
   color: #fff;
 }
 .show_images_container h2 {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-size: 40px;
   color: #ddd;
 }
@@ -97,6 +97,8 @@
   cursor: pointer;
   margin-bottom: 1rem;
   width: 320px;
+  background-color: #121212;
+  border-radius: 16px;
 }
 .gallary .pics img {
   width: 100%;
@@ -105,12 +107,12 @@
   border-radius: 16px 16px 0 0;
 }
 .gallary .pics:hover img {
-  scale: 1.1;
+  scale: 1.05;
   transform: rotateY(180deg);
 }
 .pics_content {
-  background-color: #353535;
-  border-bottom-right-radius: 16px;
+  background-color: #111012;
+  border-radius: 16px;
 }
 .pics_content h3 {
   font-size: 1.2rem;

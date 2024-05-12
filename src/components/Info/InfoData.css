@@ -24,9 +24,9 @@
   width: 50%;
 }
 .info_content .info_image_holder img {
-  width: 350px;
-  height: 350px;
-  border-radius: 1rem;
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
 }
 .info_content .info_content_data {
   width: 50%;
@@ -64,15 +64,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .info_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
   .info_content .info_content_data,
   .info_content .info_image_holder {
+    width: 100%;
+  }
+  .info_content .info_image_holder img {
+    height: auto;
     width: 100%;
   }
   .info_content_banner {

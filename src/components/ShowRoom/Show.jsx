@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import image from "../../images/caliburng2.webp";
 
 const Show = () => {
   useEffect(() => {
@@ -35,14 +36,11 @@ const Show = () => {
   const getAllCategoryApi = () => {
     getAllCategory(setAllCategory);
   };
-  const sectionMenu = () => {
-    document.querySelector(".sections ul").classList.toggle("fade_in");
-  };
   return (
     <section className="show_images" id="gallary">
       <div className="show_images_container">
         <h2>{t("gallary")}</h2>
-        <div className="sections">
+        {/* <div className="sections">
           {allCategory.map((item) => {
             return (
               <Link to={`/vape/${item._id}`}>
@@ -54,7 +52,7 @@ const Show = () => {
               </Link>
             );
           })}
-        </div>
+        </div> */}
         <div
           className={model ? " model open" : "model"}
           onClick={() => setModel(false)}
@@ -62,62 +60,61 @@ const Show = () => {
           <img src={tempImgSrc} alt="image gallary hawana" />
           <FontAwesomeIcon icon={faXmark} onClick={(e) => setModel(false)} />
         </div>
-        {productsLoading ? (
-          <span class="loader"></span>
-        ) : (
-          <div className="gallary">
-            <Swiper
-              modules={[Pagination]}
-              spaceBetween={10}
-              slidesPerView={2}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                650: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                850: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                },
-              }}
-            >
-              {allIProducts.map((item) => {
-                return (
-                  <SwiperSlide>
-                    <div
-                      className="pics"
-                      key={item._id}
-                      onClick={() => getImg(item.images)}
-                    >
-                      <img
-                        src={item.images}
-                        alt="hawana_gallary"
-                        className="w-100"
-                      />
-                      <div className="pics_content">
-                        <h3>
-                          {getLang == "en"
-                            ? item.translation.en.productName
-                            : item.translation.ar.productName}
-                        </h3>
-                        <p>
-                          {getLang == "en"
-                            ? item.translation.en.description
-                            : item.translation.ar.description}
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
-        )}
+        <div className="gallary">
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={10}
+            slidesPerView={2}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              650: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              850: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="pics" onClick={() => getImg(image)}>
+                <img src={image} alt="hawana_gallary" className="w-100" />
+                <div className="pics_content">
+                  <h3>Category Name</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pics" onClick={() => getImg(image)}>
+                <img src={image} alt="hawana_gallary" className="w-100" />
+                <div className="pics_content">
+                  <h3>Category Name</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pics" onClick={() => getImg(image)}>
+                <img src={image} alt="hawana_gallary" className="w-100" />
+                <div className="pics_content">
+                  <h3>Category Name</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pics" onClick={() => getImg(image)}>
+                <img src={image} alt="hawana_gallary" className="w-100" />
+                <div className="pics_content">
+                  <h3>Category Name</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </section>
   );

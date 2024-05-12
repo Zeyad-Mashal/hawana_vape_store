@@ -60,7 +60,7 @@
 }
 @media screen and (max-width: 489px) {
   .contact_content {
-    width: 380px;
+    width: 360px;
     height: 550px;
   }
   .contact_content input,

@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
           <p className="error">{cError}</p>
           <button onClick={postContactUs}>
-            {cLoading ? <span class="loader"></span> : "Send"}
+            {cLoading ? <span class="loader"></span> : "ارسال"}
           </button>
         </div>
         <div className="contact_popup d-none">

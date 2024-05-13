@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSnapchat,
   faFacebookF,
-  faXTwitter,
+  faTiktok,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="social">
           <FontAwesomeIcon icon={faSnapchat} />
           <FontAwesomeIcon icon={faFacebookF} />
-          <FontAwesomeIcon icon={faXTwitter} />
+          <FontAwesomeIcon icon={faTiktok} />
           <FontAwesomeIcon icon={faInstagram} />
         </div>
         <div className="footer_content">

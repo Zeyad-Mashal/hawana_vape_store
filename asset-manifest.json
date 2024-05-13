@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hawana_vape_store/static/css/main.037c113e.css",
-    "main.js": "/hawana_vape_store/static/js/main.a3833070.js",
+    "main.css": "/hawana_vape_store/static/css/main.2fe0d154.css",
+    "main.js": "/hawana_vape_store/static/js/main.f272cffa.js",
     "static/media/how.jpg": "/hawana_vape_store/static/media/how.bd5d237358b68730a30c.jpg",
     "static/media/company.jpg": "/hawana_vape_store/static/media/company.3492f10419dec17a8522.jpg",
     "static/media/5.jpg": "/hawana_vape_store/static/media/5.cc643bb08ec49818bade.jpg",
@@ -15,11 +15,11 @@
     "static/media/p6.jpeg": "/hawana_vape_store/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
     "static/media/caliburng2.webp": "/hawana_vape_store/static/media/caliburng2.fb741ef002529623fb4d.webp",
     "index.html": "/hawana_vape_store/index.html",
-    "main.037c113e.css.map": "/hawana_vape_store/static/css/main.037c113e.css.map",
-    "main.a3833070.js.map": "/hawana_vape_store/static/js/main.a3833070.js.map"
+    "main.2fe0d154.css.map": "/hawana_vape_store/static/css/main.2fe0d154.css.map",
+    "main.f272cffa.js.map": "/hawana_vape_store/static/js/main.f272cffa.js.map"
   },
   "entrypoints": [
-    "static/css/main.037c113e.css",
-    "static/js/main.a3833070.js"
+    "static/css/main.2fe0d154.css",
+    "static/js/main.f272cffa.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0df6698e.css",
-    "main.js": "/static/js/main.40afd123.js",
+    "main.css": "/static/css/main.6ae2d9c7.css",
+    "main.js": "/static/js/main.beb63aea.js",
     "static/media/how.jpg": "/static/media/how.bd5d237358b68730a30c.jpg",
     "static/media/company.jpg": "/static/media/company.3492f10419dec17a8522.jpg",
     "static/media/5.jpg": "/static/media/5.cc643bb08ec49818bade.jpg",
@@ -13,13 +13,12 @@
     "static/media/3.jpg": "/static/media/3.6778101c6e8cfb0c90a4.jpg",
     "static/media/futuer.jpeg": "/static/media/futuer.571bc1ffc5f5bde1bc96.jpeg",
     "static/media/p6.jpeg": "/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
-    "static/media/caliburng2.webp": "/static/media/caliburng2.fb741ef002529623fb4d.webp",
     "index.html": "/index.html",
-    "main.0df6698e.css.map": "/static/css/main.0df6698e.css.map",
-    "main.40afd123.js.map": "/static/js/main.40afd123.js.map"
+    "main.6ae2d9c7.css.map": "/static/css/main.6ae2d9c7.css.map",
+    "main.beb63aea.js.map": "/static/js/main.beb63aea.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df6698e.css",
-    "static/js/main.40afd123.js"
+    "static/css/main.6ae2d9c7.css",
+    "static/js/main.beb63aea.js"
   ]
 }

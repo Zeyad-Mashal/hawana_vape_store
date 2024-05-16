@@ -12,8 +12,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import image from "../../images/caliburng2.webp";
-
 const Show = () => {
   useEffect(() => {
     getProductsApi();
@@ -50,7 +48,7 @@ const Show = () => {
         <div className="gallary">
           <Swiper
             modules={[Pagination]}
-            spaceBetween={0}
+            spaceBetween={10}
             slidesPerView={2}
             pagination={{ clickable: true }}
             breakpoints={{
@@ -59,12 +57,12 @@ const Show = () => {
                 spaceBetween: 10,
               },
               850: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 10,
               },
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
             }}
           >

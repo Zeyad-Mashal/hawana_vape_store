@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/hawana_vape_store/static/css/main.2fe0d154.css",
-    "main.js": "/hawana_vape_store/static/js/main.5b912c6d.js",
-    "static/media/how.jpg": "/hawana_vape_store/static/media/how.bd5d237358b68730a30c.jpg",
-    "static/media/company.jpg": "/hawana_vape_store/static/media/company.3492f10419dec17a8522.jpg",
-    "static/media/5.jpg": "/hawana_vape_store/static/media/5.cc643bb08ec49818bade.jpg",
-    "static/media/1.jpg": "/hawana_vape_store/static/media/1.821085aa2229059caa0b.jpg",
-    "static/media/4.jpg": "/hawana_vape_store/static/media/4.259ef8e04e3de599adea.jpg",
-    "static/media/about.png": "/hawana_vape_store/static/media/about.ac83e62c2441996dd117.png",
-    "static/media/logo.png": "/hawana_vape_store/static/media/logo.8c1b780e76820d96cfd6.png",
-    "static/media/7.jpg": "/hawana_vape_store/static/media/7.28318b239048abc8de12.jpg",
-    "static/media/3.jpg": "/hawana_vape_store/static/media/3.6778101c6e8cfb0c90a4.jpg",
-    "static/media/futuer.jpeg": "/hawana_vape_store/static/media/futuer.571bc1ffc5f5bde1bc96.jpeg",
-    "static/media/p6.jpeg": "/hawana_vape_store/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
-    "static/media/caliburng2.webp": "/hawana_vape_store/static/media/caliburng2.fb741ef002529623fb4d.webp",
-    "index.html": "/hawana_vape_store/index.html",
-    "main.2fe0d154.css.map": "/hawana_vape_store/static/css/main.2fe0d154.css.map",
-    "main.5b912c6d.js.map": "/hawana_vape_store/static/js/main.5b912c6d.js.map"
+    "main.css": "/static/css/main.0df6698e.css",
+    "main.js": "/static/js/main.40afd123.js",
+    "static/media/how.jpg": "/static/media/how.bd5d237358b68730a30c.jpg",
+    "static/media/company.jpg": "/static/media/company.3492f10419dec17a8522.jpg",
+    "static/media/5.jpg": "/static/media/5.cc643bb08ec49818bade.jpg",
+    "static/media/1.jpg": "/static/media/1.821085aa2229059caa0b.jpg",
+    "static/media/4.jpg": "/static/media/4.259ef8e04e3de599adea.jpg",
+    "static/media/about.png": "/static/media/about.ac83e62c2441996dd117.png",
+    "static/media/logo.png": "/static/media/logo.8c1b780e76820d96cfd6.png",
+    "static/media/7.jpg": "/static/media/7.28318b239048abc8de12.jpg",
+    "static/media/3.jpg": "/static/media/3.6778101c6e8cfb0c90a4.jpg",
+    "static/media/futuer.jpeg": "/static/media/futuer.571bc1ffc5f5bde1bc96.jpeg",
+    "static/media/p6.jpeg": "/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
+    "static/media/caliburng2.webp": "/static/media/caliburng2.fb741ef002529623fb4d.webp",
+    "index.html": "/index.html",
+    "main.0df6698e.css.map": "/static/css/main.0df6698e.css.map",
+    "main.40afd123.js.map": "/static/js/main.40afd123.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fe0d154.css",
-    "static/js/main.5b912c6d.js"
+    "static/css/main.0df6698e.css",
+    "static/js/main.40afd123.js"
   ]
 }

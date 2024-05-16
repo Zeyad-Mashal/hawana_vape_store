@@ -40,19 +40,6 @@ const Show = () => {
     <section className="show_images" id="gallary">
       <div className="show_images_container">
         <h2>{t("gallary")}</h2>
-        {/* <div className="sections">
-          {allCategory.map((item) => {
-            return (
-              <Link to={`/vape/${item._id}`}>
-                <button>
-                  {getLang == "en"
-                    ? item.categoryName_En
-                    : item.categoryName_Ar}
-                </button>
-              </Link>
-            );
-          })}
-        </div> */}
         <div
           className={model ? " model open" : "model"}
           onClick={() => setModel(false)}
@@ -63,7 +50,7 @@ const Show = () => {
         <div className="gallary">
           <Swiper
             modules={[Pagination]}
-            spaceBetween={10}
+            spaceBetween={0}
             slidesPerView={2}
             pagination={{ clickable: true }}
             breakpoints={{
@@ -72,7 +59,7 @@ const Show = () => {
                 spaceBetween: 10,
               },
               850: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               1024: {
@@ -81,38 +68,28 @@ const Show = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="pics" onClick={() => getImg(image)}>
-                <img src={image} alt="hawana_gallary" className="w-100" />
-                <div className="pics_content">
-                  <h3>Category Name</h3>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="pics" onClick={() => getImg(image)}>
-                <img src={image} alt="hawana_gallary" className="w-100" />
-                <div className="pics_content">
-                  <h3>Category Name</h3>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="pics" onClick={() => getImg(image)}>
-                <img src={image} alt="hawana_gallary" className="w-100" />
-                <div className="pics_content">
-                  <h3>Category Name</h3>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="pics" onClick={() => getImg(image)}>
-                <img src={image} alt="hawana_gallary" className="w-100" />
-                <div className="pics_content">
-                  <h3>Category Name</h3>
-                </div>
-              </div>
-            </SwiperSlide>
+            {allCategory.map((item) => {
+              return (
+                <SwiperSlide>
+                  <Link to={`/vape/${item._id}`}>
+                    <div className="pics">
+                      <img
+                        src={item.categoryPic}
+                        alt="hawana_gallary"
+                        className="w-100"
+                      />
+                      <div className="pics_content">
+                        <h3>
+                          {getLang == "en"
+                            ? item.categoryName_En
+                            : item.categoryName_Ar}
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>

@@ -17,10 +17,27 @@ const Footer = () => {
       <div className="footer_container">
         <h2>HAWANA Vape</h2>
         <div className="social">
-          <FontAwesomeIcon icon={faSnapchat} />
-          <FontAwesomeIcon icon={faFacebookF} />
-          <FontAwesomeIcon icon={faTiktok} />
-          <FontAwesomeIcon icon={faInstagram} />
+          <a
+            href="https://www.snapchat.com/add/hawana_east?share_id=COkm1me6ySc&locale=ar-SA-u-nu-arab"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faSnapchat} />
+          </a>
+          <a
+            href="https://www.facebook.com/people/Hawana-East/pfbid0MmQJD4RGUvacGhqwuN7LeeUddodF6GRc3CB5jcbLm2ke85gJH7ywnA4YHfPtAT5Gl/?mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a
+            href="https://www.tiktok.com/@hawana_east?_t=8mNWPoKhxgG&_r=1"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faTiktok} />
+          </a>
+          <a href="https://www.instagram.com/hawana_east/" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
         <div className="footer_content">
           <div className="footer_content_info">

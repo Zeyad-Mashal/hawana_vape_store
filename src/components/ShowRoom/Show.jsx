@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Show.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import getAllProducts from "../../Api/getAllProducts.api";
 import getAllCategory from "../../Api/getAllCategory.api";
 // import Swiper core and required modules
 import { Pagination } from "swiper/modules";
@@ -14,7 +13,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 const Show = () => {
   useEffect(() => {
-    getProductsApi();
     getAllCategoryApi();
   }, []);
   const [allIProducts, setAllProducts] = useState([]);
@@ -28,11 +26,8 @@ const Show = () => {
     setModel(true);
   };
   const [t] = useTranslation("globel");
-  const getProductsApi = () => {
-    getAllProducts(setAllProducts, setProductsLoading);
-  };
   const getAllCategoryApi = () => {
-    getAllCategory(setAllCategory);
+    getAllCategory(setAllCategory, setProductsLoading);
   };
   return (
     <section className="show_images" id="gallary">
@@ -66,28 +61,32 @@ const Show = () => {
               },
             }}
           >
-            {allCategory.map((item) => {
-              return (
-                <SwiperSlide>
-                  <Link to={`/vape/${item._id}`}>
-                    <div className="pics">
-                      <img
-                        src={item.categoryPic}
-                        alt="hawana_gallary"
-                        className="w-100"
-                      />
-                      <div className="pics_content">
-                        <h3>
-                          {getLang == "en"
-                            ? item.categoryName_En
-                            : item.categoryName_Ar}
-                        </h3>
+            {productsLoading ? (
+              <span class="loader"></span>
+            ) : (
+              allCategory.map((item) => {
+                return (
+                  <SwiperSlide>
+                    <Link to={`/vape/${item._id}`}>
+                      <div className="pics">
+                        <img
+                          src={item.categoryPic}
+                          alt="hawana_gallary"
+                          className="w-100"
+                        />
+                        <div className="pics_content">
+                          <h3>
+                            {getLang == "en"
+                              ? item.categoryName_En
+                              : item.categoryName_Ar}
+                          </h3>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              );
-            })}
+                    </Link>
+                  </SwiperSlide>
+                );
+              })
+            )}
           </Swiper>
         </div>
       </div>

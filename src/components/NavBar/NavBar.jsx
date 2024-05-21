@@ -36,11 +36,11 @@ const NavBar = () => {
         <img src={logo} alt="logo" width={120} />
       </a>
       <nav ref={navRef}>
-        <a href="/hawana_vape_store/#">{t("header.home")}</a>
-        <a href="/hawana_vape_store/#gallary">{t("header.ourproducts")}</a>
-        <a href="/hawana_vape_store/#about">{t("header.aboutus")}</a>
-        <a href="/hawana_vape_store/#info">{t("header.companyinfo")}</a>
-        <a href="/hawana_vape_store/#contact">{t("header.contact")}</a>
+        <a href="/#">{t("header.home")}</a>
+        <a href="/#gallary">{t("header.ourproducts")}</a>
+        <a href="/#about">{t("header.aboutus")}</a>
+        <a href="/#info">{t("header.companyinfo")}</a>
+        <a href="/#contact">{t("header.contact")}</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FontAwesomeIcon icon={faXmark} />
         </button>

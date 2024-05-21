@@ -6,15 +6,18 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import Vape from './components/VapePage/Vape';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
+import ProductDetails from './components/Prodcut Details/ProductDetails';
 // import Test from './components/Test';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/vape/:categoryID' element={<Vape />} />
+        <Route path='/productDetails/:productID' element={<ProductDetails />} />
       </Routes>
 
       <div className='fixed_contact'>

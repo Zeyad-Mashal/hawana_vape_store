@@ -1,5 +1,6 @@
 const URL = "https://hawana.onrender.com/category/getcategory";
-const getAllCategory = (setAllCategory) => {
+const getAllCategory = (setAllCategory, setProductsLoading) => {
+    setProductsLoading(true)
     fetch(URL, {
         method: "GET",
         headers: {
@@ -10,11 +11,14 @@ const getAllCategory = (setAllCategory) => {
         .then(responseJson => {
             if (responseJson.message == 'success') {
                 setAllCategory(responseJson.allCategory)
+                setProductsLoading(false);
             } else {
                 console.log(responseJson.message);
+                setProductsLoading(false);
             }
         }).catch(error => {
             console.log('Error:', error.message)
+            setProductsLoading(false);
         })
 }
 export default getAllCategory;

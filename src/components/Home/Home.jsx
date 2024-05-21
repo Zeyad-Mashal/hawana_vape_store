@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <main>
       <Hero />
+      <Show />
       <AboutUs />
       <Banner1 />
       <InfoData />
-      <Show />
       <Contact />
       <Footer />
       <div className="warrnig_popup">

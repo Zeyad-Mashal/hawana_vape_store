@@ -81,6 +81,10 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   line-height: 23px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  line-height: 1.8;
 }
 @media screen and (max-width: 789px) {
   .details_container {

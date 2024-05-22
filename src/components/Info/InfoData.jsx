@@ -1,7 +1,7 @@
 import React from "react";
 import "./InfoData.css";
-import info from "../../images/how.jpg";
-import info2 from "../../images/company.jpg";
+import info from "../../images/b.jpg";
+import info2 from "../../images/a.jpg";
 import InfoBanner from "../../images/3.jpg";
 import { useTranslation } from "react-i18next";
 
@@ -14,6 +14,7 @@ const InfoData = () => {
           <div className="info_content">
             <div className="info_image_holder">
               <img src={info} alt="hawana info" />
+              <spa className="info_image_holder_img1">{t("howImage")}</spa>
             </div>
             <div className="info_content_data">
               <p>{t("infoTop")}</p>
@@ -30,6 +31,9 @@ const InfoData = () => {
             </div>
             <div className="info_image_holder">
               <img src={info2} alt="hawana info" />
+              <span className="info_image_holder_img2">
+                {t("companyImage")}
+              </span>
             </div>
           </div>
         </div>

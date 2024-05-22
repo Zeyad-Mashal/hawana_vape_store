@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../images/about.png";
+import image from "../../images/c.jpg";
 import "./AboutUs.css";
 import { useTranslation } from "react-i18next";
 
@@ -12,6 +12,7 @@ const AboutUs = () => {
           <h4>{t("aboutsection")}</h4>
         </div>
         <img src={image} alt="" />
+        <span className="about_float">{t("aboutImage")}</span>
       </div>
     </section>
   );

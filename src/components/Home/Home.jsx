@@ -8,11 +8,14 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import logo from "../../images/logo.png";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const getLang = localStorage.getItem("language");
   const closePopup = () => {
     document.querySelector(".warrnig_popup").remove();
     document.body.style.overflow = "auto";
   };
+  const [t] = useTranslation("globel");
   return (
     <main>
       <Hero />
@@ -22,16 +25,24 @@ const Home = () => {
       <InfoData />
       <Contact />
       <Footer />
-      <div className="warrnig_popup">
+      <div className="warrnig_popup ar">
         <div className="popup_content">
           <img src={logo} alt="hwana logo" />
-          <h2>تحذير !!</h2>
-          <h3>السن القانوني</h3>
-          <p>هوانا يقدم خدمة لمن هم فوق السن القانوني</p>
-          <p>هل يزيد عمرك عن +21 ؟</p>
-          <button onClick={closePopup}>نعم</button>
+          <h2>{getLang == "ar" ? "تحذير" : "Warning"} !!</h2>
+          <h3>{getLang == "ar" ? "السن القانوني" : "the legal age"}</h3>
+          <p>
+            {getLang == "ar"
+              ? "هوانا يقدم خدمة لمن هم فوق السن القانوني"
+              : "Hawana provides a service to those over the legal age"}
+          </p>
+          <p>
+            {getLang == "ar" ? "هل يزيد عمرك عن +21 ؟" : "Are you over 21+?"}
+          </p>
+          <button onClick={closePopup}>
+            {getLang == "ar" ? "نعم" : "Yes"}
+          </button>
           <button>
-            <a href="https://google.com">لا</a>
+            <a href="https://google.com">{getLang == "ar" ? "لا" : "No"}</a>
           </button>
         </div>
       </div>

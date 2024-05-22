@@ -44,31 +44,39 @@ const Contact = () => {
         <div className="contact_content">
           <h2>{t("contactsection")}</h2>
           <div>
-            <input
-              type="text"
-              placeholder="الاسم"
-              value={cName}
-              onChange={(e) => setCName(e.target.value)}
-            />
-            <input
-              type="number"
-              placeholder="رقم الهاتف"
-              value={cNumber}
-              onChange={(e) => setCNumber(e.target.value)}
-            />
+            <div className="name_input">
+              <p>الاسم</p>
+              <input
+                type="text"
+                value={cName}
+                onChange={(e) => setCName(e.target.value)}
+              />
+            </div>
+            <div className="name_input">
+              <p>رقم الهاتف</p>
+              <input
+                type="number"
+                value={cNumber}
+                onChange={(e) => setCNumber(e.target.value)}
+              />
+            </div>
           </div>
           <div>
-            <input
-              type="email"
-              placeholder="الايميل"
-              value={cEmail}
-              onChange={(e) => setCEmail(e.target.value)}
-            />
-            <textarea
-              placeholder="اكتب رسالتك او استفسر عن عروضنا"
-              value={cMessage}
-              onChange={(e) => setCMessage(e.target.value)}
-            />
+            <div className="email_inputs">
+              <p>الايميل</p>
+              <input
+                type="email"
+                value={cEmail}
+                onChange={(e) => setCEmail(e.target.value)}
+              />
+            </div>
+            <div className="email_inputs">
+              <p>اكتب رسالتك او استفسر عن عروضنا</p>
+              <textarea
+                value={cMessage}
+                onChange={(e) => setCMessage(e.target.value)}
+              />
+            </div>
           </div>
           <p className="error">{cError}</p>
           <button onClick={postContactUs}>

@@ -10,6 +10,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 .about_info {
   width: 50%;
@@ -23,7 +24,30 @@
   width: auto;
   height: 350px;
 }
-
+.about_content .about_float {
+  position: absolute;
+  top: 143px;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .about_content .about_float {
+    left: 140px;
+    top: 110px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about_content .about_float {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 958px) {
+  .about_content .about_float {
+    left: 80px;
+    top: 110px;
+  }
+}
 @media screen and (max-width: 789px) {
   .about_content {
     flex-direction: column-reverse;

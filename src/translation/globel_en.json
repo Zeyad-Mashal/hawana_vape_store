@@ -28,5 +28,9 @@
     "copyright": "All Rights Reserved By Hawana | 2024",
     "aboutImage": "About Us",
     "howImage": "How did the idea start ?",
-    "companyImage": "When did you start and what has the company reached now ?"
+    "companyImage": "When did you start and what has the company reached now ?",
+    "inputName": "Name",
+    "inputNumber" : "Phone Number",
+    "inputEmail" : "Email",
+    "inputMessage": "Write your message or inquire about our offers"
 }

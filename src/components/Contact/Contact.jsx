@@ -45,7 +45,7 @@ const Contact = () => {
           <h2>{t("contactsection")}</h2>
           <div>
             <div className="name_input">
-              <p>الاسم</p>
+              <p>{t("inputName")}</p>
               <input
                 type="text"
                 value={cName}
@@ -53,7 +53,7 @@ const Contact = () => {
               />
             </div>
             <div className="name_input">
-              <p>رقم الهاتف</p>
+              <p>{t("inputNumber")}</p>
               <input
                 type="number"
                 value={cNumber}
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
           <div>
             <div className="email_inputs">
-              <p>الايميل</p>
+              <p>{t("inputEmail")}</p>
               <input
                 type="email"
                 value={cEmail}
@@ -71,7 +71,7 @@ const Contact = () => {
               />
             </div>
             <div className="email_inputs">
-              <p>اكتب رسالتك او استفسر عن عروضنا</p>
+              <p>{t("inputMessage")}</p>
               <textarea
                 value={cMessage}
                 onChange={(e) => setCMessage(e.target.value)}

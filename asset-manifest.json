@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0e7eb80.css",
+    "main.css": "/static/css/main.06cd9bc5.css",
     "main.js": "/static/js/main.00a9a0d0.js",
     "static/media/b.jpg": "/static/media/b.9db35972aeaa4df4af9a.jpg",
     "static/media/c.jpg": "/static/media/c.8a919ed232aae6e04ef4.jpg",
@@ -15,11 +15,11 @@
     "static/media/p6.jpeg": "/static/media/p6.5ab13bfd01e0d3c8ad14.jpeg",
     "static/media/caliburng2.webp": "/static/media/caliburng2.fb741ef002529623fb4d.webp",
     "index.html": "/index.html",
-    "main.b0e7eb80.css.map": "/static/css/main.b0e7eb80.css.map",
+    "main.06cd9bc5.css.map": "/static/css/main.06cd9bc5.css.map",
     "main.00a9a0d0.js.map": "/static/js/main.00a9a0d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0e7eb80.css",
+    "static/css/main.06cd9bc5.css",
     "static/js/main.00a9a0d0.js"
   ]
 }

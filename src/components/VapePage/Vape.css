@@ -68,9 +68,7 @@
   max-width: 100%;
   border-radius: 16px 16px 0 0;
   transition: 0.5s ease-in;
-  border-top: 1px solid #aaa;
-  border-right: 1px solid #aaa;
-  border-left: 1px solid #aaa;
+  background-color: #fff;
 }
 .vape_item:hover img {
   transform: rotateY(180deg);

@@ -21,10 +21,6 @@ const Show = () => {
   const [tempImgSrc, setTempImgSrc] = useState("");
   const [allCategory, setAllCategory] = useState([]);
   const getLang = localStorage.getItem("language");
-  const getImg = (imgSrc) => {
-    setTempImgSrc(imgSrc);
-    setModel(true);
-  };
   const [t] = useTranslation("globel");
   const getAllCategoryApi = () => {
     getAllCategory(setAllCategory, setProductsLoading);
@@ -67,7 +63,7 @@ const Show = () => {
               allCategory.map((item) => {
                 return (
                   <SwiperSlide>
-                    <Link to={`/vape/${item._id}`}>
+                    <Link to={`/subCategory/${item._id}`}>
                       <div className="pics">
                         <img
                           src={item.categoryPic}

@@ -1,0 +1,28 @@
+.subcategory {
+  width: 100%;
+  color: #fff;
+  margin-top: 5rem;
+}
+.subcategory_container {
+  width: 100%;
+}
+.subcategory_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.subcategory_item {
+  width: 320px;
+}
+.subcategory_item img {
+  width: 100%;
+}
+.subcategory_item h4 {
+  background-color: #444;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  padding: 10px 0;
+}

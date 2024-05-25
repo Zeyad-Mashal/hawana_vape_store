@@ -13,7 +13,7 @@ const Vape = () => {
   const [allProduct, setAllProducts] = useState([]);
   const [allProductLoading, setAllProductLoading] = useState(true);
   const [allProductError, setAllProductError] = useState("");
-  const { categoryID } = useParams();
+  const { subCategoryID } = useParams();
   const [t] = useTranslation("globel");
   const [model, setModel] = useState(false);
   const getLang = localStorage.getItem("language");
@@ -37,7 +37,7 @@ const Vape = () => {
       setAllProducts,
       setAllProductLoading,
       setAllProductError,
-      categoryID
+      subCategoryID
     );
   };
   return (
@@ -50,8 +50,8 @@ const Vape = () => {
             {t("productGallary")}{" "}
             <span>
               {getLang == "en"
-                ? allProduct[0]?.category?.categoryName_En
-                : allProduct[0]?.category?.categoryName_Ar}
+                ? allProduct[0]?.subCategory?.subCategory_En
+                : allProduct[0]?.subCategory?.subCategory_Ar}
             </span>
           </h2>
         )}

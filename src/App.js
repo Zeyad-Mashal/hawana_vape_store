@@ -7,6 +7,7 @@ import Vape from './components/VapePage/Vape';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import ProductDetails from './components/Prodcut Details/ProductDetails';
+import SubCategory from './components/SubCategory/SubCategory';
 // import Test from './components/Test';
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/vape/:categoryID' element={<Vape />} />
+        <Route path='/vape/:subCategoryID' element={<Vape />} />
+        <Route path='/subCategory/:categoryID' element={<SubCategory />} />
         <Route path='/productDetails/:productID' element={<ProductDetails />} />
       </Routes>
 

@@ -25,7 +25,7 @@ const Home = () => {
       <InfoData />
       <Contact />
       <Footer />
-      <div className="warrnig_popup ar">
+      <div className="warrnig_popup">
         <div className="popup_content">
           <img src={logo} alt="hwana logo" />
           <h2>{getLang == "ar" ? "تحذير" : "Warning"} !!</h2>

@@ -25,7 +25,7 @@ const Home = () => {
     if (isShow == undefined) {
       document
         .querySelector(".warrnig_popup")
-        .classList.replace("d-none", "d-block");
+        .classList.replace("d-none", "d-flex");
       localStorage.setItem("isShow", "true");
     }
   };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../Hero/Hero";
 import AboutUs from "../About Us/AboutUs";
 import Banner1 from "../Banner1/Banner1";
@@ -10,12 +10,25 @@ import logo from "../../images/logo.png";
 import "./Home.css";
 import { useTranslation } from "react-i18next";
 const Home = () => {
+  useEffect(() => {
+    handleWarning();
+  });
   const getLang = localStorage.getItem("language");
   const closePopup = () => {
     document.querySelector(".warrnig_popup").remove();
     document.body.style.overflow = "auto";
   };
   const [t] = useTranslation("globel");
+
+  const handleWarning = () => {
+    const isShow = localStorage.getItem("isShow");
+    if (isShow == undefined) {
+      document
+        .querySelector(".warrnig_popup")
+        .classList.replace("d-none", "d-block");
+      localStorage.setItem("isShow", "true");
+    }
+  };
   return (
     <main>
       <Hero />
@@ -25,7 +38,7 @@ const Home = () => {
       <InfoData />
       <Contact />
       <Footer />
-      <div className="warrnig_popup">
+      <div className="warrnig_popup d-none">
         <div className="popup_content">
           <img src={logo} alt="hwana logo" />
           <h2>{getLang == "ar" ? "تحذير" : "Warning"} !!</h2>

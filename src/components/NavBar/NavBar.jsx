@@ -9,6 +9,7 @@ import {
 import "./NavBar.css";
 import logo from "../../images/logo.png";
 import { useTranslation } from "react-i18next";
+import { init } from "i18next";
 const NavBar = () => {
   const navRef = useRef();
 
@@ -23,10 +24,14 @@ const NavBar = () => {
   };
   const handleWebsiteLang = () => {
     const lang = localStorage.getItem("language");
-    if (lang == "ar") {
-      i18n.changeLanguage("ar");
+    if (lang) {
+      if (lang === "ar") {
+        i18n.changeLanguage("ar");
+      } else {
+        i18n.changeLanguage("en");
+      }
     } else {
-      i18n.changeLanguage("en");
+      i18n.changeLanguage("ar");
     }
   };
   handleWebsiteLang();

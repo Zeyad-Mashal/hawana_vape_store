@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import ProductDetails from './components/Prodcut Details/ProductDetails';
 import SubCategory from './components/SubCategory/SubCategory';
-// import Test from './components/Test';
+// import i18n from './translation/i18n';
 
 function App() {
   return (

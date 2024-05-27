@@ -27,6 +27,8 @@ const Home = () => {
         .querySelector(".warrnig_popup")
         .classList.replace("d-none", "d-flex");
       localStorage.setItem("isShow", "true");
+    } else {
+      document.body.style.overflow = "auto";
     }
   };
   return (
@@ -41,21 +43,21 @@ const Home = () => {
       <div className="warrnig_popup d-none">
         <div className="popup_content">
           <img src={logo} alt="hwana logo" />
-          <h2>{getLang == "ar" ? "تحذير" : "Warning"} !!</h2>
-          <h3>{getLang == "ar" ? "السن القانوني" : "the legal age"}</h3>
+          <h2>{getLang == "en" ? "Warning" : "تحذير"} !!</h2>
+          <h3>{getLang == "en" ? "the legal age" : "السن القانوني"}</h3>
           <p>
-            {getLang == "ar"
-              ? "هوانا يقدم خدمة لمن هم فوق السن القانوني"
-              : "Hawana provides a service to those over the legal age"}
+            {getLang == "en"
+              ? "Hawana provides a service to those over the legal age"
+              : "هوانا يقدم خدمة لمن هم فوق السن القانوني"}
           </p>
           <p>
-            {getLang == "ar" ? "هل يزيد عمرك عن +21 ؟" : "Are you over 21+?"}
+            {getLang == "en" ? "Are you over 21+?" : "هل يزيد عمرك عن +21 ؟"}
           </p>
           <button onClick={closePopup}>
-            {getLang == "ar" ? "نعم" : "Yes"}
+            {getLang == "en" ? "Yes" : "نعم"}
           </button>
           <button>
-            <a href="https://google.com">{getLang == "ar" ? "لا" : "No"}</a>
+            <a href="https://google.com">{getLang == "en" ? "No" : "لا"}</a>
           </button>
         </div>
       </div>

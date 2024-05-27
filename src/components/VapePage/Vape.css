@@ -206,6 +206,9 @@
     top: 100%;
     right: 90%;
   }
+  .vape_container h2 span {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (max-width: 489px) {
   .vape_list {

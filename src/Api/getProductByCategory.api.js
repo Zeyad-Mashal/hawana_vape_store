@@ -1,4 +1,4 @@
-const URL = "https://hawana.onrender.com/product/getByCategory";
+const URL = "https://hwnofficial.host/product/getByCategory";
 const getProductByCategory = (setAllProducts, setAllProductLoading, setAllProductError, categoryID) => {
     setAllProductLoading(true)
     fetch(`${URL}/${categoryID}`, {

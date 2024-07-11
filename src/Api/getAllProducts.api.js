@@ -1,4 +1,4 @@
-const URL = "https://hawana.onrender.com/product/getByRandom";
+const URL = "https://hwnofficial.host/product/getByRandom";
 const getAllProducts = (setAllProducts, setProductsLoading) => {
     setProductsLoading(true)
     fetch(URL, {

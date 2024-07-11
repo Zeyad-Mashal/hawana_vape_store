@@ -1,4 +1,4 @@
-const URL = "https://hawana.onrender.com/product/productDetails";
+const URL = "https://hwnofficial.host/product/productDetails";
 const productDetails = (setProduct, setAllProductLoading, setAllProductError, productID) => {
     setAllProductLoading(true)
     fetch(`${URL}/${productID}`, {

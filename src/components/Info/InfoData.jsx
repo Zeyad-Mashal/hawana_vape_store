@@ -23,6 +23,10 @@ const InfoData = () => {
         </div>
         <div className="info_content_banner">
           <img src={InfoBanner} alt="info banner" />
+          <span className="banner_info">
+            {t("bannerInfo1")} <br />
+            {t("bannerInfo2")}
+          </span>
         </div>
         <div className="info_wrapper">
           <div className="info_content info_reverse">

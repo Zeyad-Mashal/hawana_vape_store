@@ -71,6 +71,14 @@
   width: 100%;
   padding: 0;
   display: block;
+  position: relative;
+}
+.info_content_banner .banner_info {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  font-size: 3rem;
+  font-weight: bold;
 }
 .info_content_banner img {
   width: 100%;
@@ -119,6 +127,10 @@
   .info_content_banner img {
     height: auto;
   }
+  .info_content_banner .banner_info {
+    font-size: 2.5rem;
+    left: 5%;
+  }
   .info_image_holder .info_image_holder_img1 {
     top: 80px;
     font-size: 3.5rem;
@@ -152,5 +164,9 @@
     right: 70px;
     top: 130px;
     width: 250px;
+  }
+  .info_content_banner .banner_info {
+    font-size: 1.2rem;
+    left: 10%;
   }
 }
